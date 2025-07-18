@@ -1,0 +1,124 @@
+unit LISTADO_POR_ANIO_Y_ZONA;
+interface
+uses
+  crt,ARCHIVO_TER,ABMC_TERRENOS;
+Procedure leer_anio(VAR anio:string);
+Procedure crear_arch_ter_aux_anio(VAR ARCH_TER:t_archivo_terreno;VAR ARCH_TER_AUX:t_archivo_terreno;anio:string);
+Procedure ordenar_arch_ter_aux_anio(VAR ARCH_TER_AUX:t_archivo_terreno);
+Procedure mostrar_arch_ter_aux(VAR ARCH_TER_AUX:t_archivo_terreno);
+Procedure LISTADO_ANIO (VAR ARCH_TER:t_archivo_terreno);
+Procedure generar_arch_aux_zona(VAR ARCH_TER:t_archivo_terreno;VAR ARCH_AUX:t_archivo_terreno);
+Procedure LISTADO_POR_ZONA (VAR ARCH_TER:t_archivo_terreno);
+implementation
+
+Procedure leer_anio(VAR anio:string);
+begin
+  writeln('INGRESE ANIO. EJ: 2022');
+  readln(anio);
+end;
+
+Procedure crear_arch_ter_aux_anio(VAR ARCH_TER:t_archivo_terreno;VAR ARCH_TER_AUX:t_archivo_terreno;anio:string);
+VAR
+  I,J:word;
+  anio_aux:string;
+  X:t_dato_terreno;
+begin
+  J:=0;
+  For I:=0 to filesize(ARCH_TER)-1 do
+  begin
+   obtener_reg_arch_ter(ARCH_TER,I,X);
+   anio_aux:=copy(X.fecha_ins,7,4);
+   If anio_aux=anio then
+   begin
+     ingresar_dato_ter(ARCH_TER_AUX,X,J);
+     J:=J+1;
+   end;
+  end;
+end;
+
+Procedure ordenar_arch_ter_aux_anio(VAR ARCH_TER_AUX:t_archivo_terreno);
+VAR
+  I,J:word;
+  X,Xsig:t_dato_terreno;
+  fecha,fechasig:string;
+begin
+  For I:=0 to filesize(ARCH_TER_AUX)-1 do
+   For J:=0 to filesize(ARCH_TER_AUX)-2 do
+    begin
+      obtener_reg_arch_ter(ARCH_TER_AUX,J,X);
+      obtener_reg_arch_ter(ARCH_TER_AUX,J+1,Xsig);
+      fecha:=convertir_fecha(X);
+      fechasig:=convertir_fecha(Xsig);
+      If fecha>fechasig then
+      begin
+        ingresar_dato_ter(ARCH_TER_AUX,X,J+1);
+        ingresar_dato_ter(ARCH_TER_AUX,Xsig,J);
+      end;
+    end;
+end;
+
+Procedure  mostrar_arch_ter_aux(VAR ARCH_TER_AUX:t_archivo_terreno);
+VAR
+  I:word;
+  X:t_dato_terreno;
+begin
+  For I:=0 to filesize(ARCH_TER_AUX)-1 do
+   begin
+     obtener_reg_arch_ter(ARCH_TER_AUX,I,X);
+     mostrar_terreno(X);
+   end;
+end;
+
+Procedure LISTADO_ANIO (VAR ARCH_TER:t_archivo_terreno);
+VAR
+  anio:string;
+  ARCH_AUX:t_archivo_terreno;
+begin
+  crear_abrir_ter_aux(ARCH_AUX);
+  leer_anio(anio);
+  crear_arch_ter_aux_anio(ARCH_TER,ARCH_AUX,anio);
+  ordenar_arch_ter_aux_anio(ARCH_AUX);
+  mostrar_arch_ter_aux(ARCH_AUX);
+  cerrar_ter(ARCH_AUX);
+  borrar_arch_ter(ARCH_AUX);
+end;
+
+Procedure generar_arch_aux_zona(VAR ARCH_TER:t_archivo_terreno;VAR ARCH_AUX:t_archivo_terreno);
+VAR
+  I,J:word;
+  X,Xsig:t_dato_terreno;
+  zona1,zona2:byte;
+begin
+  For I:=0 to filesize(ARCH_TER)-1 do
+   For J:=0 to filesize(ARCH_TER)-2 do
+    begin
+      obtener_reg_arch_ter(ARCH_AUX,J,X);
+      obtener_reg_arch_ter(ARCH_AUX,J+1,Xsig);
+      zona1:=X.zona;
+      zona2:=Xsig.zona;
+        If zona1>zona2 then
+        begin
+          ingresar_dato_ter(ARCH_AUX,X,J+1);
+          ingresar_dato_ter(ARCH_AUX,Xsig,J);
+        end
+        else
+        begin
+          ingresar_dato_ter(ARCH_AUX,X,J);
+          ingresar_dato_ter(ARCH_AUX,Xsig,J+1);
+        end;
+    end;
+end;
+
+Procedure LISTADO_POR_ZONA (VAR ARCH_TER:t_archivo_terreno);
+VAR
+  ARCH_AUX:t_archivo_terreno;
+begin
+  crear_abrir_ter_aux(ARCH_AUX);
+  generar_arch_aux_zona(ARCH_TER,ARCH_AUX);
+  mostrar_arch_ter_aux(ARCH_AUX);
+  cerrar_ter(ARCH_AUX);
+  borrar_arch_ter(ARCH_AUX);
+end;
+
+end.
+

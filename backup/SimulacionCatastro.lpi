@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="12"/>
+    <PathDelim Value="\"/>
+    <General>
+      <Flags>
+        <MainUnitHasCreateFormStatements Value="False"/>
+        <MainUnitHasTitleStatement Value="False"/>
+        <MainUnitHasScaledStatement Value="False"/>
+      </Flags>
+      <SessionStorage Value="InProjectDir"/>
+      <Title Value="SImulacionCatastro"/>
+      <UseAppBundle Value="False"/>
+      <ResourceType Value="res"/>
+    </General>
+    <BuildModes>
+      <Item Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+    </RunParams>
+    <Units>
+      <Unit>
+        <Filename Value="SImulacionCatastro.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="SimulacionCatastro"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units\archivos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ARCHIVO_PROP"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units\arboles\arboles.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ARBOLES"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units\ABMC\abmc.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ABMC"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units\MENU\menu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MENU"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units\ARCHIVO TERRENOS\archivo_ter.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ARCHIVO_TER"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units\ARCHIVO PROPIETARIOS\archivo_propietarios.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ARCHIVO_PROPIETARIOS"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units\ABMC PROP\abmc_propietarios.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ABMC_PROPIETARIOS"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units\ABMC TER\abmc_terrenos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ABMC_TERRENOS"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units\LISTADO APYNOM\listado_apynom.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="LISTADO_APYNOM"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units\LISTADO POR AÑO\listado_por_anio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="LISTADO_POR_ANIO_Y_ZONA"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units\LISTADO POR ZONA\listado_por_zona.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="LISTADO_POR_ZONA"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units\LISTADOS\listados.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="LISTADOS"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units\COMPROBANTE\comprobante.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="COMPROBANTE"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units\ESTADISTICAS\estadisticas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ESTADISTICAS"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units\LISTADO\listado.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="LISTADO"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units\MARCO\marco.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MARCO"/>
+      </Unit>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="SImulacionCatastro"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="units;units\arboles;units\ABMC;units\MENU;units\ARCHIVO TERRENOS;units\ARCHIVO PROPIETARIOS;units\ABMC PROP;units\ABMC TER;units\LISTADO APYNOM;units\LISTADO POR AÑO;units\LISTADO POR ZONA;units\LISTADOS;units\COMPROBANTE;units\ESTADISTICAS;units\LISTADO;units\MARCO"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf2Set"/>
+      </Debugging>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions>
+      <Item>
+        <Name Value="EAbort"/>
+      </Item>
+      <Item>
+        <Name Value="ECodetoolError"/>
+      </Item>
+      <Item>
+        <Name Value="EFOpenError"/>
+      </Item>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

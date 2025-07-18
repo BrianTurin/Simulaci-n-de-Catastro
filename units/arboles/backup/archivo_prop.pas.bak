@@ -1,0 +1,98 @@
+unit ARCHIVO_PROP;
+interface
+uses
+  crt;
+
+CONST
+  RUTA_PROPIETARIO='C:\archivos\propietarios.dat';
+
+Type
+  t_dato_propietario=record
+    num_con:word;
+    apellido:string[40];
+    nombre:string[40];
+    direccion:string[40];
+    ciudad:string[40];
+    DNI:integer;
+    fecha_nac:string[10];
+    tel:integer;
+    mail:string[70] ;
+    estado:boolean;
+  end;
+
+   t_archivo_propietario=file of t_dato_propietario;
+
+
+
+Procedure crear_abrir_prop (VAR ARCH_PROP:t_archivo_propietario);
+Procedure cerrar_prop (VAR ARCH_PROP:t_archivo_propietario);
+Procedure obtener_reg_arch_prop(I:word; VAR X:t_dato_propietario);
+Procedure ingresar_dato_arch_prop(VAR ARCH_PROP:t_archivo_propietario;X:t_dato_propietario);
+Procedure baja_logica_prop(VAR ARCH_PROP:t_archivo_propietario;pos:word);
+Procedure mostrar_contribuyente(VAR ARCH_PROP:t_archivo_propietario;pos:word);
+
+implementation
+Procedure crear_abrir_prop (VAR ARCH_PROP:t_archivo_propietario);
+begin
+  assign(ARCH_PROP,RUTA_PROPIETARIO);
+  {$I-}
+  reset(ARCH_PROP);
+  {$I+}
+  If IOResult<>0 then
+   rewrite(ARCH_PROP);
+end;
+
+Procedure cerrar_prop (VAR ARCH_PROP:t_archivo_propietario);
+begin
+  close(ARCH_PROP);
+end;
+
+Procedure obtener_reg_arch_prop(I:word; VAR X:t_dato_propietario);
+begin
+  seek(ARCH_PROP,I);
+  read(ARCH_PROP,X);
+end;
+
+Procedure ingresar_dato_arch_prop(VAR ARCH_PROP:t_archivo_propietario;X:t_dato_propietario);
+begin
+  seek(ARCH_PROP,filesize(ARCH_PROP));
+  write(ARCH_PROP,X);
+end;
+
+Procedure baja_logica_prop(VAR ARCH_PROP:t_archivo_propietario;pos:word);
+VAR
+  REG:t_dato_propietario;
+begin
+  seek(ARCH_PROP,pos);
+  read(ARCH_PROP,REG);
+  REG.estado:=false;
+  write(ARCH_PROP,REG);
+end;
+
+Procedure mostrar_contribuyente(VAR ARCH_PROP:t_archivo_propietario;pos:word);
+VAR
+  X:t_dato_propietario;
+begin
+  obtener_reg_arch_prop(pos,X);
+  writeln('Numero de contribuyente');
+  writeln(X.num_con);
+  writeln('Apellido/s');
+  writeln(X.apellido);
+  writeln('Nombre/s');
+  writeln(X.nombre);
+  writeln('Direccion');
+  writeln(X.direccion);
+  writeln('Ciudad');
+  writeln(X.ciudad);
+  writeln('DNI');
+  writeln(X.DNI);
+  writeln('Fecha de nacimiento');
+  writeln(X.fecha_nac);
+  writeln('Telefono');
+  writeln(X.tel);
+  writeln('Mail');
+  writeln(X.mail);
+  readkey;
+end;
+end.
+

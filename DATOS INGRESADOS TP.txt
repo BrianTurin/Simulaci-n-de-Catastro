@@ -1,0 +1,77 @@
+PROPIETARIOS:
+numero de contribuyente: 500
+apellido:Jimenez
+nombre:Raul
+Direccion: San Martin 511
+Ciudad: Concepcion del Uruguay
+DNI:30000000
+Fecha de nacimiento:11/06/2000
+Telefono: 3442501192
+Mail: rauljim@hotmail.com
+
+num con:700
+apellido:perez
+nombre:juan
+dir: Olivos 111
+Ciudad: San Jose
+DNI 45400400
+Fecha de nac:10/10/1990
+Tel: 3442400400
+Mail: soyjuanperez@gmail.com
+
+num con:1000
+apellido:benitez
+nombre:marcos
+dir: Belgrano 134
+ciudad:Resistencia
+DNI:50000000
+Fecha de nac:05/01/1986
+Tel: 3447200300
+mail: maarquitos@yahoo.com
+
+TERRENOS:
+
+num de con:1000
+num men:789
+avaluo:100000
+fecha de inscripcion: 20/12/2022
+domicilio parcelario: san rafael
+m^2:130
+Zona:5
+tipo edif:2
+
+numero de con:500
+num men:300
+avaluo:500000
+fecha de inscripcion: 17/12/2022
+Domicilio Parcelario: concepcion
+M^2:40
+Zona:3
+Tipo edif:3
+
+numero de con:500
+num men:600
+avaluo:600000
+fecha de inscripcion: 16/12/2022
+Domicilio Parcelario: Colon
+m^2:60
+Zona:2
+Tipo edif:1
+
+numero de con:500
+num men:700
+avaluo:700000
+fecha de inscripcion: 15/12/2022
+Domicilio Parcelario: Liebig
+m^2:70
+Zona:4
+Tipo edif:5
+
+numero de con:700
+num men:125
+avaluo:650000
+fecha de inscripcion: 22/10/2021
+Domicilio Parcelario: Colon
+m^2:70
+Zona:1
+Tipo edif:4

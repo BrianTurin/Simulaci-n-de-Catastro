@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="SImulacionCatastro.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="SimulacionCatastro"/>
+        <CursorPos X="10" Y="3"/>
+        <UsageCount Value="79"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units\archivos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ARCHIVO_PROP"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="18"/>
+        <UsageCount Value="79"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units\arboles\arboles.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ARBOLES"/>
+        <EditorIndex Value="8"/>
+        <TopLine Value="4"/>
+        <CursorPos X="7" Y="29"/>
+        <UsageCount Value="78"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units\ABMC\abmc.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ABMC"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="10"/>
+        <UsageCount Value="75"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units\MENU\menu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MENU"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="60"/>
+        <CursorPos X="22" Y="70"/>
+        <UsageCount Value="70"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units\ARCHIVO TERRENOS\archivo_ter.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ARCHIVO_TER"/>
+        <EditorIndex Value="10"/>
+        <TopLine Value="70"/>
+        <CursorPos Y="79"/>
+        <UsageCount Value="64"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units\ARCHIVO PROPIETARIOS\archivo_propietarios.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ARCHIVO_PROPIETARIOS"/>
+        <EditorIndex Value="9"/>
+        <TopLine Value="19"/>
+        <CursorPos X="91" Y="28"/>
+        <UsageCount Value="64"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units\ABMC PROP\abmc_propietarios.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ABMC_PROPIETARIOS"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="136"/>
+        <CursorPos X="9" Y="102"/>
+        <UsageCount Value="60"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units\ABMC TER\abmc_terrenos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ABMC_TERRENOS"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="493"/>
+        <CursorPos X="13" Y="479"/>
+        <UsageCount Value="60"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units\LISTADO APYNOM\listado_apynom.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="LISTADO_APYNOM"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="104"/>
+        <CursorPos X="12" Y="112"/>
+        <UsageCount Value="58"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units\LISTADO POR AÑO\listado_por_anio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="LISTADO_POR_ANIO_Y_ZONA"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="29"/>
+        <UsageCount Value="53"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units\LISTADO POR ZONA\listado_por_zona.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="LISTADO_POR_ZONA"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="22"/>
+        <UsageCount Value="51"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units\LISTADOS\listados.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="LISTADOS"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="105"/>
+        <CursorPos X="6"/>
+        <UsageCount Value="50"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units\COMPROBANTE\comprobante.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="COMPROBANTE"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="14"/>
+        <CursorPos X="13" Y="28"/>
+        <UsageCount Value="50"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units\ESTADISTICAS\estadisticas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ESTADISTICAS"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="122"/>
+        <CursorPos X="28" Y="130"/>
+        <UsageCount Value="50"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units\LISTADO\listado.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="LISTADO"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="50"/>
+        <CursorPos X="31" Y="54"/>
+        <UsageCount Value="48"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units\MARCO\marco.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MARCO"/>
+        <EditorIndex Value="11"/>
+        <TopLine Value="2"/>
+        <CursorPos X="14" Y="10"/>
+        <UsageCount Value="28"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units\archivo_prop.pas"/>
+        <UnitName Value="ARCHIVO_PROP"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="20"/>
+        <CursorPos X="11" Y="29"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units\arboles\archivo_prop.pas"/>
+        <UnitName Value="ARCHIVO_PROP"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="2"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units\LISTADO POR AÑO Y ZONA\listado_por_anio_y_zona.pas"/>
+        <UnitName Value="LISTADO_POR_ANIO"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="22"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units\LISTADO POR AÑO Y ZONA\listado_por_anio.pas"/>
+        <UnitName Value="LISTADO_POR_ANIO"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="27" Y="98"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units\LISTADOS AÑO Y ZONA\listados.pas.pas"/>
+        <UnitName Value="LISTADOS"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="11"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="units\COMPROBANTE\comprobante.pas"/>
+        <Caret Line="79" Column="8" TopLine="70"/>
+      </Position>
+      <Position>
+        <Filename Value="units\MENU\menu.pas"/>
+        <Caret Line="62" Column="18" TopLine="45"/>
+      </Position>
+      <Position>
+        <Filename Value="units\ABMC PROP\abmc_propietarios.pas"/>
+        <Caret Line="108" Column="11" TopLine="95"/>
+      </Position>
+      <Position>
+        <Filename Value="units\LISTADO APYNOM\listado_apynom.pas"/>
+        <Caret Line="70" Column="14" TopLine="54"/>
+      </Position>
+      <Position>
+        <Filename Value="units\LISTADO\listado.pas"/>
+        <Caret Line="23" Column="11" TopLine="14"/>
+      </Position>
+      <Position>
+        <Filename Value="units\ESTADISTICAS\estadisticas.pas"/>
+        <Caret Line="245" Column="17" TopLine="238"/>
+      </Position>
+      <Position>
+        <Filename Value="units\ABMC PROP\abmc_propietarios.pas"/>
+        <Caret Line="158" Column="10" TopLine="151"/>
+      </Position>
+      <Position>
+        <Filename Value="units\ABMC PROP\abmc_propietarios.pas"/>
+        <Caret Line="18" Column="81" TopLine="9"/>
+      </Position>
+      <Position>
+        <Filename Value="units\ABMC PROP\abmc_propietarios.pas"/>
+        <Caret Line="453" Column="48" TopLine="444"/>
+      </Position>
+      <Position>
+        <Filename Value="units\ABMC PROP\abmc_propietarios.pas"/>
+        <Caret Line="431" Column="100" TopLine="425"/>
+      </Position>
+      <Position>
+        <Filename Value="units\ABMC PROP\abmc_propietarios.pas"/>
+        <Caret Line="23" Column="100" TopLine="14"/>
+      </Position>
+      <Position>
+        <Filename Value="units\ARCHIVO TERRENOS\archivo_ter.pas"/>
+        <Caret Line="264" Column="31" TopLine="248"/>
+      </Position>
+      <Position>
+        <Filename Value="units\ARCHIVO TERRENOS\archivo_ter.pas"/>
+        <Caret Line="285" Column="46" TopLine="277"/>
+      </Position>
+      <Position>
+        <Filename Value="units\ARCHIVO TERRENOS\archivo_ter.pas"/>
+        <Caret Line="329" Column="14" TopLine="323"/>
+      </Position>
+      <Position>
+        <Filename Value="units\MENU\menu.pas"/>
+        <Caret Line="73" Column="29" TopLine="66"/>
+      </Position>
+      <Position>
+        <Filename Value="units\COMPROBANTE\comprobante.pas"/>
+        <Caret Line="6" Column="111"/>
+      </Position>
+      <Position>
+        <Filename Value="units\COMPROBANTE\comprobante.pas"/>
+        <Caret Line="23" Column="56" TopLine="7"/>
+      </Position>
+      <Position>
+        <Filename Value="units\ABMC TER\abmc_terrenos.pas"/>
+        <Caret Line="435" Column="119" TopLine="426"/>
+      </Position>
+      <Position>
+        <Filename Value="units\COMPROBANTE\comprobante.pas"/>
+        <Caret Line="6" Column="120"/>
+      </Position>
+      <Position>
+        <Filename Value="units\COMPROBANTE\comprobante.pas"/>
+        <Caret Line="13" Column="15" TopLine="6"/>
+      </Position>
+      <Position>
+        <Filename Value="units\COMPROBANTE\comprobante.pas"/>
+        <Caret Line="10" Column="135"/>
+      </Position>
+      <Position>
+        <Filename Value="units\COMPROBANTE\comprobante.pas"/>
+        <Caret Line="12" Column="22" TopLine="4"/>
+      </Position>
+      <Position>
+        <Filename Value="units\LISTADO\listado.pas"/>
+        <Caret Line="92" Column="40" TopLine="77"/>
+      </Position>
+      <Position>
+        <Filename Value="units\LISTADO\listado.pas"/>
+        <Caret Line="42" Column="32" TopLine="32"/>
+      </Position>
+      <Position>
+        <Filename Value="units\LISTADO\listado.pas"/>
+        <Caret Line="27" Column="78" TopLine="23"/>
+      </Position>
+      <Position>
+        <Filename Value="units\ABMC TER\abmc_terrenos.pas"/>
+        <Caret Line="503" Column="15" TopLine="496"/>
+      </Position>
+      <Position>
+        <Filename Value="units\ABMC TER\abmc_terrenos.pas"/>
+        <Caret Line="23" Column="150" TopLine="14"/>
+      </Position>
+      <Position>
+        <Filename Value="units\LISTADO APYNOM\listado_apynom.pas"/>
+        <Caret Line="112" Column="12" TopLine="104"/>
+      </Position>
+      <Position>
+        <Filename Value="units\ESTADISTICAS\estadisticas.pas"/>
+        <Caret Line="11" Column="81"/>
+      </Position>
+      <Position>
+        <Filename Value="units\ESTADISTICAS\estadisticas.pas"/>
+        <Caret Line="121" Column="5" TopLine="112"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+    <HistoryLists>
+      <List Name="LaunchingApplication" Type="File" Count="1">
+        <Item1 Value="C:\Windows\system32\cmd.exe /C ${TargetCmdLine}"/>
+      </List>
+    </HistoryLists>
+  </ProjectSession>
+</CONFIG>
